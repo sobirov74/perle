@@ -1,0 +1,34 @@
+$primaryBackground: #E5E5E5;
+$blackCol: #000000;
+$wwhiteCol: #FFFFFF;
+$primaryBackground: #E5E5E5;
+$playfairDisplay: 'PlayfairDisplay';
+
+$fonts: ('PlayfairDisplay', 'Italic', 400),
+        ('PlayfairDisplay', 'Regular', 400);
+
+
+        @each $name,
+        $type,
+        $weight in $fonts {
+            @font-face {
+                font-family: $name;
+                src: url('../fonts/#{$name}-#{$type}.ttf');
+            }
+        }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+

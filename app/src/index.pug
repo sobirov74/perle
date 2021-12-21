@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title LaPerle
+        link(rel="stylesheet", href="styles/main.min.css")
+        link(rel="stylesheet", href="reservations.html")
+    body
+        header.header 
+            include view/header.pug
+        main.main 
+            include view/main/main-menu.pug
+            include view/main/main-events.pug
+            include view/main/main-about.pug
+        footer.footer
+            include view/footer.pug
+        script(src="./script/common.js") 

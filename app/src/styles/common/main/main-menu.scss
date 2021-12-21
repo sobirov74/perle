@@ -1,0 +1,131 @@
+.mainMenu__content {
+    display: flex;
+    background: $primaryBackground;
+    width: 100%;
+
+    &-imgBox{
+        width: 50%;
+    }
+
+    &-img {
+        max-width: 960px;
+        width: 100%;
+        display: block;
+    }
+
+    &-info {
+        padding: 50px 0 0 50px;
+    }
+
+    &-title {
+        font-size: 48px;
+        line-height: 55px;
+        color: $blackCol;
+        font-family: 'PlayfairDisplay';
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+
+    &-description {
+        font-size: 20px;
+        line-height: 45px;
+        font-family: 'PlayfairDisplay';
+        color: $blackCol;
+        margin: 30px 0 50px 0;
+        max-width: 730px;
+        width: 100%;
+    }
+}
+
+.readMore-btn {
+    border: 1px solid $blackCol;
+    max-width: 300px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    color: $blackCol;
+    display: flex;
+    padding: 13px 0 13px 0;
+    justify-content: center;
+    font-family: 'PlayfairDisplay';
+    text-transform: uppercase;
+}
+
+
+
+@media(max-width: 1560px) {
+    .mainMenu__content {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        & div {
+            width: 100%;
+        }
+
+        &-img {
+            max-width: 100%;
+        }
+
+        &-title {
+            text-align: center;
+        }
+
+        &-description {
+            max-width: 100%;
+            padding-right: 50px;
+            text-align: center;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+
+    }
+
+}
+
+@media (max-width: 450px) {
+    .mainAbout__content {
+        &-info {
+            // font-size: 42px;
+            // line-height: 45px;
+            padding-left: 0;
+        }
+    }
+
+    .mainMenu__content {
+        &-info {
+            padding-left: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-description {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+
+    .mainAbout__content {
+        &-info {
+            padding-right: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-description {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+}
+
+
+
+.readMore-btn {
+    margin: 0 auto;
+}
