@@ -103,8 +103,9 @@
 
     &-bottom {
         display: flex;
-        // padding: 50px;
+        margin-bottom: 25px;
         justify-content: space-evenly;
+        
     }
 
     &-icons {
@@ -196,6 +197,7 @@
             &-top {
                 justify-content: space-evenly;
             }
+
         }
 
         &__right {
